@@ -84,10 +84,10 @@ const STRINGS = {
     links: `<a href="${SITE}?lang=en">Portfolio</a> · <a href="${SITE}Chih-Kai-Wang-CV.pdf">CV (PDF)</a> · <a href="mailto:f0909172434@gmail.com">Email</a>`,
     selected: 'Selected work', films: 'Films made as code', negatives: 'Negative results, kept', how: 'How I work',
     now: (d) => `Now · ${d}`, merged: 'Merged upstream', caseStudy: 'case study', watch: 'Watch',
-    runsNote: 'Each terminal replays a real run against the commit it names; the output is copied, not written.',
+    runsNote: 'Each terminal replays a real run against the commit it names. The output was copied from that run, not written by hand.',
     everything: (n) => `<b>Everything else</b> — ${n} more records`,
     kinds: { tool: 'Tools', research: 'Research', learning: 'Learning', other: 'Other' },
-    heroAlt: 'Chih-Kai Wang — a terminal session that prints a short profile: Taipei; Python and TypeScript tools for inspectable AI and mathematical research; open to software and AI internships.',
+    heroAlt: 'Chih-Kai Wang. A terminal session that prints a short profile: Taipei; small Python and TypeScript tools that let you check a claim yourself; open to software and AI internships.',
     note: `<sub>Generated from <a href="${SOURCE}">projects.json</a> by <code>scripts/render-profile.mjs</code>; edits by hand are overwritten. Motion respects <code>prefers-reduced-motion</code>.</sub>`,
     period: '.',
   },
@@ -96,17 +96,16 @@ const STRINGS = {
     links: `<a href="${SITE}?lang=zh-Hant">作品集</a> · <a href="${SITE}Chih-Kai-Wang-CV.pdf">履歷 PDF</a> · <a href="mailto:f0909172434@gmail.com">Email</a>`,
     selected: '精選作品', films: '以程式完成的影片', negatives: '留下來的負面結果', how: '我怎麼工作',
     now: (d) => `近況 · ${d}`, merged: '已合併的上游貢獻', caseStudy: '案例', watch: '觀看',
-    runsNote: '每個終端機畫面都重播一次對指定 commit 的真實執行；輸出是複製的，不是寫出來的。',
+    runsNote: '每個終端機畫面都重播一次對指定 commit 的真實執行。輸出是從那次執行複製來的，不是手寫的。',
     everything: (n) => `<b>其他作品</b> — 還有 ${n} 筆記錄`,
     kinds: { tool: '工具', research: '研究', learning: '學習', other: '其他' },
-    heroAlt: '王治凱 — 一段終端機會話，印出簡短的自我介紹：台北；做可檢查的 AI 與數學研究工具（Python 與 TypeScript）；尋找軟體與 AI 實習。',
+    heroAlt: '王治凱。一段終端機會話，印出簡短的自我介紹：台北；用 Python 與 TypeScript 做讓人能自己檢查主張的小工具；尋找軟體與 AI 實習。',
     note: `<sub>由 <a href="${SOURCE}">projects.json</a> 經 <code>scripts/render-profile.mjs</code> 產生；手動修改會被覆蓋。動畫會遵守 <code>prefers-reduced-motion</code>。</sub>`,
     period: '。',
   },
 };
 
 const pic = (base, alt, width) => `<picture><source media="(prefers-color-scheme: dark)" srcset="assets/${base}-dark.svg"><img src="assets/${base}-light.svg" alt="${alt.replace(/"/g, '&quot;')}" width="${width}"></picture>`;
-const cmd = (c) => ` &nbsp;<sub><code>${c}</code></sub>`;
 
 function renderReadme(loc) {
   const L = LOCALES[loc], s = STRINGS[L];
@@ -126,12 +125,12 @@ function renderReadme(loc) {
   const sections = [
     pic(`hero-${loc}`, s.heroAlt, '100%'),
     `<p>${s.other} &nbsp;│&nbsp; ${s.links}</p>`,
-    `## ${s.selected}${cmd('ls -l --pinned')}\n\n<p>\n${cards.join('\n')}\n</p>\n\n<sub>${s.runsNote}</sub>`,
-    `## ${s.films}${cmd('ckw play --loop *')}\n\n${profile.filmsIntro[L]}\n\n<p>\n${players.join('\n')}\n</p>\n\n${films.map((p) => `- **[${p.name}](${p.repo})** — ${desc(p)} \`${p.made}\` · [▶ ${s.watch}](${p.watch})`).join('\n')}`,
-    `## ${s.negatives}${cmd('ckw verify --keep-negatives')}\n\n${profile.negativesIntro[L]}\n\n${negatives.map((p) => `- ✗ **[${p.name}](${p.repo})** — ${p.negative[L]}`).join('\n')}`,
-    `## ${s.how}${cmd('git log --graph')}\n\n${profile.method.map((m, i) => `**\`0${i + 1}\` ${m.title[L]}${s.period}** ${m.body[L]}`).join('\n\n')}\n\n${profile.methodNote[L]}`,
-    `## ${s.now(formatMonth(profile.now.asOf, L))}${cmd('ckw log --now')}\n\n${profile.now.items.map((item) => `- ${item[L]}`).join('\n')}`,
-    `## ${s.merged}${cmd('gh pr list --state merged')}\n\n${profile.contributions.map((c) => `- [${c.repo}#${c.url.match(/\/pull\/(\d+)/)?.[1] ?? ''}](${c.url}) — ${c.title[L]} <sub>${c.merged}</sub>${c.caseStudy ? ` · [${s.caseStudy}](case-studies/${c.caseStudy}.md)` : ''}`).join('\n')}`,
+    `## ${s.selected}\n\n<p>\n${cards.join('\n')}\n</p>\n\n<sub>${s.runsNote}</sub>`,
+    `## ${s.films}\n\n${profile.filmsIntro[L]}\n\n<p>\n${players.join('\n')}\n</p>\n\n${films.map((p) => `- **[${p.name}](${p.repo})** — ${desc(p)} \`${p.made}\` · [▶ ${s.watch}](${p.watch})`).join('\n')}`,
+    `## ${s.negatives}\n\n${profile.negativesIntro[L]}\n\n${negatives.map((p) => `- ✗ **[${p.name}](${p.repo})** — ${p.negative[L]}`).join('\n')}`,
+    `## ${s.how}\n\n${profile.method.map((m, i) => `**\`0${i + 1}\` ${m.title[L]}${s.period}** ${m.body[L]}`).join('\n\n')}\n\n${profile.methodNote[L]}`,
+    `## ${s.now(formatMonth(profile.now.asOf, L))}\n\n${profile.now.items.map((item) => `- ${item[L]}`).join('\n')}`,
+    `## ${s.merged}\n\n${profile.contributions.map((c) => `- [${c.repo}#${c.url.match(/\/pull\/(\d+)/)?.[1] ?? ''}](${c.url}) — ${c.title[L]} <sub>${c.merged}</sub>${c.caseStudy ? ` · [${s.caseStudy}](case-studies/${c.caseStudy}.md)` : ''}`).join('\n')}`,
     `<details>\n<summary>${s.everything(rest)}</summary>\n\n${groups.join('\n\n')}\n\n</details>`,
     pic(`footer-${loc}`, 'exit', '100%'),
     s.note,

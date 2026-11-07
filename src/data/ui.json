@@ -2,7 +2,7 @@
   "en": {
     "meta": {
       "title": "Chih-Kai Wang | Inspectable AI and mathematical research tools",
-      "description": "Python and TypeScript tools for inspectable AI and mathematical research: claims with evidence attached, negative results kept, boundaries stated. Chih-Kai Wang, Taipei; open to software and AI internships."
+      "description": "Small Python and TypeScript tools that let you check a claim yourself: the evidence is attached, the limits are written down, and the results that failed stay published."
     },
     "nav": {
       "skip": "Skip to the records",
@@ -145,7 +145,7 @@
   "zh-Hant": {
     "meta": {
       "title": "王治凱｜可檢查的 AI 與數學研究工具",
-      "description": "用 Python 與 TypeScript 做可檢查的 AI 與數學研究工具：主張附上證據、負面結果留著、邊界說清楚。王治凱，台北；尋找軟體與 AI 實習。"
+      "description": "用 Python 與 TypeScript 做的小工具，讓人能自己檢查一個主張：證據附在旁邊，限制寫清楚，失敗的結果也留著。"
     },
     "nav": {
       "skip": "跳到記錄",
