@@ -183,6 +183,15 @@
       "links": []
     },
     {
+      "name": "agentconf-audit",
+      "kind": "tool",
+      "status": "v0.1.0 · static analysis only",
+      "descZh": "對 AI coding agent 設定檔（Claude Code、Claude Desktop、MCP 伺服器、Codex）的靜態安全稽核，報告附上證據且可重播。21 條規則，每條都寫明理由與盲點；證據經遮蔽並附可驗證的 report_sha256；10 個合成 fixture 與凍結的黃金報告；72 個測試；CI 跑 Ubuntu 與 macOS × Python 3.11/3.13；零執行期依賴。尚無獨立驗證；不讀取 hook 腳本，也不連接 MCP 伺服器。",
+      "descEn": "Static security audit of AI coding-agent configuration (Claude Code, Claude Desktop, MCP servers, Codex) with evidence-attached, replayable reports. 21 rules, each with a rationale and a stated blind spot; redacted evidence and a verifiable report_sha256; 10 synthetic fixtures with frozen golden reports; 72 tests; CI on Ubuntu and macOS × Python 3.11/3.13; zero runtime dependencies. No independent validation; does not read hook scripts or connect to MCP servers.",
+      "repo": "https://github.com/f0909172434/agentconf-audit",
+      "links": []
+    },
+    {
       "name": "Finite Witness",
       "kind": "research",
       "status": "educational tool · 8 WebMCP tools",
