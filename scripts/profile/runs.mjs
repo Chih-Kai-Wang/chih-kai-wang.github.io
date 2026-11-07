@@ -89,11 +89,11 @@ export const RUNS = {
 
 /** One line per card under the name; a shell comment in the card. */
 export const TAGLINES = {
-  'honest-ci': { en: 'Green CI should mean the tests you expected actually ran.', zh: '讓 CI 的綠燈代表：該跑的測試真的跑了。' },
-  rigorgraph: { en: 'Ties each claim to the bytes of its evidence; one edited byte fails the audit.', zh: '把每個主張綁到證據的位元組；改動一個位元組，稽核就失敗。' },
-  'finite-witness-webmcp': { en: 'Exhaustive counterexample search on small graphs, with certificates anyone can replay.', zh: '在小圖上窮舉反例，輸出任何人都能重播的憑證。' },
-  'sair-stage2-proof-press': { en: 'Lean-checked proofs or finite countermodels; 1,669 of 1,669 released inputs accepted.', zh: '輸出 Lean 檢查的證明或有限反模型；1,669 / 1,669 個公開輸入通過。' },
-  'proofweave-math-lab': { en: 'Checks structured proofs against pinned Lean 4 / Mathlib; matching the prose is a human call.', zh: '以固定版本 Lean 4 / Mathlib 檢查結構化證明；語意對齊由人工確認。' },
-  ORACLE: { en: 'A 4:30 short film rendered entirely from code: at 3 a.m., someone asks an AI a question.', zh: '完全由程式渲染的 4 分 30 秒短片：凌晨三點，有人問 AI 一個問題。' },
-  'rulediff-negative-result': { en: "0.99 on development, 0.67 held out. It didn't hold, so it was frozen and published.", zh: '開發集 0.99，保留集 0.67。結果沒有撐住，所以凍結並公開。' },
+  'honest-ci': { en: 'A green CI run should mean the tests you expected actually ran.', zh: 'CI 亮綠燈，應該代表該跑的測試真的跑了。' },
+  rigorgraph: { en: 'Each claim stays tied to the bytes of its evidence. Change one byte and the audit fails.', zh: '每個主張都綁在證據的位元組上。改一個位元組，稽核就失敗。' },
+  'finite-witness-webmcp': { en: 'Searches every small graph for a counterexample and writes a certificate anyone can replay.', zh: '窮舉所有小圖找反例，輸出任何人都能重播的憑證。' },
+  'sair-stage2-proof-press': { en: 'A Lean-checked proof or a finite countermodel for each input; 1,669 of 1,669 released inputs accepted.', zh: '每個輸入都給出 Lean 檢查過的證明或有限反模型；1,669 個公開輸入通過 1,669 個。' },
+  'proofweave-math-lab': { en: 'Checks structured proofs against a pinned Lean 4 and Mathlib. Whether they match the prose is a human call.', zh: '用固定版本的 Lean 4 與 Mathlib 檢查結構化證明。是否和原文同義，由人判斷。' },
+  ORACLE: { en: 'A 4:30 short film rendered entirely from code. At 3 a.m., someone asks an AI a question.', zh: '完全由程式渲染的 4 分 30 秒短片。凌晨三點，有人問了 AI 一個問題。' },
+  'rulediff-negative-result': { en: '0.99 on development data, 0.67 held out. It did not hold, so it was frozen and published as it was.', zh: '開發集 0.99，保留集 0.67。結果沒有撐住，所以原樣凍結並公開。' },
 };

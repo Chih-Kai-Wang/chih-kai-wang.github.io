@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "positioning": {
-    "en": "Python and TypeScript tools for inspectable AI and mathematical research: claims with evidence attached, negative results kept, boundaries stated.",
-    "zh": "用 Python 與 TypeScript 做可檢查的 AI 與數學研究工具：主張附上證據、負面結果留著、邊界說清楚。"
+    "en": "Small Python and TypeScript tools that let you check a claim yourself: the evidence is attached, the limits are written down, and the results that failed stay published.",
+    "zh": "用 Python 與 TypeScript 做的小工具，讓人能自己檢查一個主張：證據附在旁邊，限制寫清楚，失敗的結果也留著。"
   },
   "pinOrder": [
     "honest-ci",
@@ -28,12 +28,12 @@
       }
     ],
     "about": {
-      "en": "I am a B.S. student in the Mathematics Division of the Department of Mathematics and Information Education at National Taipei University of Education, expected 2028, based in Taipei. I build small tools that make a claim checkable: a CI check that reads the test report instead of the exit code, an audit that ties a research claim to the bytes of its evidence, a search that returns the counterexample and the range it searched.",
-      "zh": "我是國立臺北教育大學數學暨資訊教育學系數學組的學士生，預計 2028 年畢業，住在台北。我做的是讓主張可以被檢查的小工具：讀測試報告而不是只看退出碼的 CI 檢查、把研究主張綁到證據位元組的稽核、回傳反例和它搜尋範圍的搜尋器。"
+      "en": "I am an undergraduate in the Mathematics Division of the Department of Mathematics and Information Education at National Taipei University of Education, in Taipei, and I expect to graduate in 2028. I build small tools that make a claim checkable. One reads a CI test report instead of trusting the exit code. One ties a research claim to the bytes of its evidence. One searches for a counterexample and tells you exactly how far it looked.",
+      "zh": "我是國立臺北教育大學數學暨資訊教育學系數學組的學士生，住在台北，預計 2028 年畢業。我做的是讓一個主張可以被檢查的小工具：一個讀 CI 的測試報告而不是只信退出碼，一個把研究主張綁到證據的位元組上，一個找反例並告訴你它到底搜了多遠。"
     },
     "learning": {
-      "en": "Currently learning Lean 4 and Mathlib through ProofWeave and the SAIR solver work, and reading about formal methods. I am looking for a software engineering or AI internship where tests and evidence decide what ships.",
-      "zh": "目前透過 ProofWeave 與 SAIR 求解器的工作學 Lean 4 與 Mathlib，也在讀形式化方法。我在找一個由測試與證據決定什麼能出貨的軟體工程或 AI 實習。"
+      "en": "I am learning Lean 4 and Mathlib through ProofWeave and the SAIR solver, and reading about formal methods. I am looking for a software engineering or AI internship where tests and evidence decide what ships.",
+      "zh": "我正透過 ProofWeave 與 SAIR 求解器學 Lean 4 和 Mathlib，也在讀形式化方法。我在找一份軟體工程或 AI 的實習，希望在那裡由測試和證據決定什麼可以出貨。"
     },
     "method": [
       {
@@ -42,8 +42,8 @@
           "zh": "設定框架"
         },
         "body": {
-          "en": "I write the question, the boundary, and what would count as done: which tests, which replay, which hash.",
-          "zh": "我寫下問題、邊界，以及什麼才算完成：哪些測試、哪個重播、哪個雜湊。"
+          "en": "I write down the question, where it stops, and what would count as done: which tests, which replay, which hash.",
+          "zh": "我先寫下問題、它的邊界，以及做到什麼才算完成：哪些測試、哪個重播、哪個雜湊。"
         }
       },
       {
@@ -52,8 +52,8 @@
           "zh": "執行"
         },
         "body": {
-          "en": "Claude Code and Codex (including Codex Cloud) write most of the code, tests and docs, in branches I review. Most lines in these repositories were typed by an agent; every claim is mine.",
-          "zh": "Claude Code 與 Codex（含 Codex Cloud）在我審閱的分支上寫大部分的程式、測試與文件。這些倉庫裡大多數的行是 agent 打出來的；每一個主張都由我負責。"
+          "en": "Claude Code and Codex, including Codex Cloud, write most of the code, tests and documentation in branches that I review. Most lines in these repositories were typed by an agent. Every claim in them is mine.",
+          "zh": "Claude Code 與 Codex（包括 Codex Cloud）在我審閱的分支上寫大部分的程式、測試與文件。這些 repo 裡大多數的程式行是 agent 打出來的；裡面每一個主張都由我負責。"
         }
       },
       {
@@ -62,45 +62,49 @@
           "zh": "決定"
         },
         "body": {
-          "en": "Evidence decides, not confidence: tests, independent replay checkers, content hashes. Negative results stay published with the same care as positive ones.",
-          "zh": "由證據決定，不由信心決定：測試、獨立的重播檢查器、內容雜湊。負面結果和正面結果一樣，用同樣的標準留下來。"
+          "en": "Evidence decides, not confidence: tests, independent replay checkers, content hashes. A result that went against me is published with the same care as one that went my way.",
+          "zh": "決定的是證據，不是信心：測試、獨立的重播檢查器、內容雜湊。不如預期的結果和如預期的結果一樣，用同樣的標準公開。"
         }
       }
     ],
     "methodNote": {
-      "en": "This site and the GitHub profile README are generated from one catalog file; the build fails if they drift.",
-      "zh": "這個網站與 GitHub 個人頁 README 由同一份目錄檔產生；兩者不一致時，建置會失敗。"
+      "en": "This site and the GitHub profile README are rendered from one catalog file. If they ever disagree, the build fails.",
+      "zh": "這個網站和 GitHub 個人頁的 README 由同一份目錄檔產生。兩者一旦不一致，建置就會失敗。"
     },
     "filmsIntro": {
-      "en": "Three works from October 2026 where the film, the music and the cut are all source code. Each repository documents its pipeline and its limits.",
-      "zh": "2026 年 10 月的三件作品：畫面、音樂與剪接全部是原始碼。每個倉庫都記錄了流程與限制。"
+      "en": "Three works from October 2026 in which the film, the music and the cut are all source code. Each repository documents its pipeline and what it could not do.",
+      "zh": "2026 年 10 月的三件作品，畫面、音樂與剪接全部是原始碼。每個 repo 都記錄了製作流程，也記錄了做不到的事。"
     },
     "negativesIntro": {
-      "en": "Results that did not go the way I hoped stay public, with the same frozen artifacts as the ones that did.",
-      "zh": "沒有照期望走的結果也公開，和成功的結果一樣附上凍結的產物。"
+      "en": "The results that went against my hopes stay public, with the same saved outputs and hashes as the ones that worked.",
+      "zh": "沒有照我期望走的結果也公開在這裡，附的輸出與雜湊和成功的結果一模一樣。"
     },
     "now": {
-      "asOf": "2026-10",
+      "asOf": "2026-11",
       "items": [
         {
-          "en": "Shipped three works made entirely as code: ORACLE, The Disease Called AI, and world.execute(me).",
-          "zh": "發布三件全部以程式完成的作品：卜 ORACLE、病名為AI、world.execute(me)。"
+          "en": "Published agentconf-audit, a static security audit of AI-agent configuration, and used it to tighten my own Codex and Claude Code settings.",
+          "zh": "發布 agentconf-audit，對 AI agent 設定檔做靜態安全稽核，並用它收緊了自己的 Codex 與 Claude Code 設定。"
         },
         {
-          "en": "Audited Goedel-Prover-V2-8B on miniF2F with its own pipeline: 201/244 against the paper's 84.6%, plus a dataset mismatch found and reported upstream.",
-          "zh": "用 Goedel-Prover-V2 官方流程稽核 8B 模型的 miniF2F：201/244，論文為 84.6%；找到資料檔版本不一致並回報上游。"
+          "en": "Released three works made entirely as code: ORACLE, The Disease Called AI and world.execute(me).",
+          "zh": "發布三件完全以程式完成的作品：卜 ORACLE、病名為AI、world.execute(me)。"
         },
         {
-          "en": "Froze the RuleDiff negative result as a technical report; the RuleShift-Web manuscript is pre-submission.",
-          "zh": "把 RuleDiff 的負面結果凍結成技術報告；RuleShift-Web 的論文仍在投稿前。"
+          "en": "Re-ran Goedel-Prover-V2-8B on miniF2F with its own pipeline: 201/244 against the paper's 84.6%, and reported a dataset mismatch upstream.",
+          "zh": "用官方流程重跑 Goedel-Prover-V2-8B 的 miniF2F：201/244，論文為 84.6%；資料集不一致已回報上游。"
         },
         {
-          "en": "Two upstream fixes merged: DeepSeek Harness Desktop and dsh-engram.",
+          "en": "Froze the RuleDiff negative result as a technical report; the RuleShift-Web manuscript has not yet been submitted.",
+          "zh": "把 RuleDiff 的負面結果凍結成技術報告；RuleShift-Web 的論文尚未投稿。"
+        },
+        {
+          "en": "Two upstream fixes merged, in DeepSeek Harness Desktop and dsh-engram.",
           "zh": "兩個上游修正已合併：DeepSeek Harness Desktop 與 dsh-engram。"
         },
         {
-          "en": "Learning Lean 4 / Mathlib through ProofWeave and SAIR.",
-          "zh": "透過 ProofWeave 與 SAIR 學 Lean 4 / Mathlib。"
+          "en": "Learning Lean 4 and Mathlib through ProofWeave and SAIR.",
+          "zh": "透過 ProofWeave 與 SAIR 學 Lean 4 與 Mathlib。"
         }
       ]
     },
@@ -139,18 +143,18 @@
     {
       "name": "HonestCI",
       "kind": "tool",
-      "status": "v1.0.4 · npm / GitHub Marketplace",
-      "descZh": "CLI 與 GitHub Action：檢查 JUnit 報告存在、新鮮，且測試數不低於可信基線。不判斷測試品質。",
-      "descEn": "CLI and GitHub Action that checks JUnit reports are present, fresh, and not below a trusted test-count baseline. It does not judge test quality.",
+      "status": "v1.0.6 on npm and the GitHub Marketplace",
+      "descZh": "HonestCI 是一個命令列工具兼 GitHub Action，包住你的測試指令，然後檢查它留下的 JUnit 報告：報告必須存在、必須是這次新產生的，測試數也不能比預設分支上的可信基線少。它抓的是「一個測試都沒跑卻亮綠燈」的情況，不評斷測試本身寫得好不好。",
+      "descEn": "HonestCI is a command-line tool and GitHub Action that wraps your test command and checks the JUnit report it leaves behind. The report must exist, must be fresh, and must not count fewer tests than a trusted baseline from the default branch. It catches jobs that pass with zero tests run. It says nothing about whether the tests themselves are any good.",
       "repo": "https://github.com/f0909172434/honest-ci",
       "links": []
     },
     {
       "name": "RigorGraph",
       "kind": "tool",
-      "status": "PyPI 1.0.1 · public beta",
-      "descZh": "本機優先的 Python CLI：把研究主張連到證據檔案與獨立審查記錄，檢查 SHA-256 雜湊，輸出離線稽核報告。VERIFIED 表示通過記錄的流程，不表示結論為真。",
-      "descEn": "Local-first Python CLI that links research claims to evidence files and independent review records, checks SHA-256 hashes, and writes offline audit reports. VERIFIED means accepted by the recorded workflow, not true.",
+      "status": "1.0.1 on PyPI, public beta",
+      "descZh": "RigorGraph 是一個 Python 命令列工具，讓研究主張和它依據的檔案綁在一起。每個主張記錄證據檔、檔案的 SHA-256，以及接受它的獨立審查；只要證據改了一個位元組，稽核報告就會失敗。它在你的機器上執行，離線輸出報告。標成 VERIFIED 的主張代表通過了記錄下來的審查流程，不代表結論為真。",
+      "descEn": "RigorGraph is a Python command-line tool that keeps a research claim attached to the files it rests on. Each claim records its evidence files, their SHA-256 hashes and the independent review that accepted it, and the audit report fails as soon as a byte of evidence changes. It runs on your machine and writes its reports offline. A claim marked VERIFIED has passed the recorded review workflow, which is not the same as being true.",
       "repo": "https://github.com/f0909172434/rigorgraph",
       "live": "https://f0909172434.github.io/examples/rigorgraph/math.html",
       "links": []
@@ -158,45 +162,45 @@
     {
       "name": "Verified Search",
       "kind": "tool",
-      "status": "v0.1.1 · stable search / experimental extensions",
-      "descZh": "DeepSeek Harness 檢索外掛：保留引用片段，讓證據缺口可見。只有 verified_search 是穩定版，四個擴充工具仍屬實驗。250 個測試；尚無獨立驗證。",
-      "descEn": "DeepSeek Harness search plugin that retains citation excerpts and keeps evidence gaps visible. Only verified_search is stable; four extensions are experimental. 250 tests; no independent validation.",
+      "status": "v0.1.1, search stable, extensions experimental",
+      "descZh": "Verified Search 是 DeepSeek Harness 的搜尋外掛。每一條引用都留下原文片段，證據不夠的地方直接標出來，不用通順的句子蓋過去。verified_search 這個工具是穩定版，另外四個擴充工具還在實驗階段。外掛有 250 個測試，目前只有作者自己驗證過。",
+      "descEn": "Verified Search is a search plugin for DeepSeek Harness that keeps the quoted excerpt behind every citation and marks where the evidence runs out instead of writing over the gap. The verified_search tool is stable; the four extension tools are experimental. The plugin has 250 tests and has not been validated by anyone other than its author.",
       "repo": "https://github.com/f0909172434/dsh-plugin-verified-search",
       "links": []
     },
     {
       "name": "Second Agent Kit",
       "kind": "tool",
-      "status": "v0.1.4 · macOS only · experimental parts",
-      "descZh": "DeepSeek Harness 的 macOS 修補：shell 程序的 Seatbelt 限制、輸入呼叫上限、以專案為單位的記憶隔離。缺口都有記錄；它不是萬用防火牆。",
-      "descEn": "Patches for DeepSeek Harness on macOS: Seatbelt confinement for shell processes, input-call limits, and per-project memory isolation. Gaps are documented; it is not a universal firewall.",
+      "status": "v0.1.4, macOS only, parts experimental",
+      "descZh": "Second Agent Kit 是一組讓 DeepSeek Harness 在 macOS 上跑得更安全的修補：shell 程序用 Seatbelt 關起來、每回合的輸入呼叫次數有上限、每個專案有自己的記憶，不會讀到別的專案。README 列出它還沒補上的缺口。它不是給 agent 用的萬用防火牆。",
+      "descEn": "Second Agent Kit is a set of patches that make DeepSeek Harness safer to run on macOS. Shell processes are confined with Seatbelt, the number of input calls per turn is capped, and each project gets its own memory so one project cannot read another's. The README lists the gaps it leaves open. It is not a general firewall for agents.",
       "repo": "https://github.com/f0909172434/dsh-second-agent-kit",
       "links": []
     },
     {
       "name": "DSH Architecture Lab",
       "kind": "tool",
-      "status": "v0.1.0-dev.9 · development preview",
-      "descZh": "開發預覽：在 DeepSeek Harness 上跑隔離的記憶／規劃實驗（Lima VM 或 Seatbelt），附外部評判與費用計量。目前的結果只來自一個小型修復任務。85 個測試。",
-      "descEn": "Development-preview toolkit for isolated memory/planning experiments on DeepSeek Harness (Lima VM or Seatbelt), with external judging and cost metering. Results so far come from one small repair task. 85 tests.",
+      "status": "v0.1.0-dev.9, development preview",
+      "descZh": "DSH Architecture Lab 在隔離環境（Lima 虛擬機或 Seatbelt 沙箱）裡跑 DeepSeek Harness 的記憶與規劃實驗，由外部評判替每次執行打分，並計算花了多少錢。它是開發預覽，有 85 個測試。目前的結果只來自一個小型修復任務，還不足以下任何結論。",
+      "descEn": "DSH Architecture Lab runs memory and planning experiments on DeepSeek Harness inside an isolated environment, either a Lima VM or a Seatbelt sandbox, with an external judge scoring each run and a meter on what it cost. It is a development preview with 85 tests. The results so far come from a single small repair task, which is too little to conclude anything from.",
       "repo": "https://github.com/f0909172434/dsh-architecture-lab",
       "links": []
     },
     {
       "name": "agentconf-audit",
       "kind": "tool",
-      "status": "v0.1.0 · static analysis only",
-      "descZh": "對 AI coding agent 設定檔（Claude Code、Claude Desktop、MCP 伺服器、Codex）的靜態安全稽核，報告附上證據且可重播。21 條規則，每條都寫明理由與盲點；證據經遮蔽並附可驗證的 report_sha256；10 個合成 fixture 與凍結的黃金報告；72 個測試；CI 跑 Ubuntu 與 macOS × Python 3.11/3.13；零執行期依賴。尚無獨立驗證；不讀取 hook 腳本，也不連接 MCP 伺服器。",
-      "descEn": "Static security audit of AI coding-agent configuration (Claude Code, Claude Desktop, MCP servers, Codex) with evidence-attached, replayable reports. 21 rules, each with a rationale and a stated blind spot; redacted evidence and a verifiable report_sha256; 10 synthetic fixtures with frozen golden reports; 72 tests; CI on Ubuntu and macOS × Python 3.11/3.13; zero runtime dependencies. No independent validation; does not read hook scripts or connect to MCP servers.",
+      "status": "v0.1.0, static analysis only",
+      "descZh": "agentconf-audit 讀 AI coding agent 的設定檔（Claude Code、Claude Desktop、MCP server、Codex），指出那些把權力交得太多的設定：不設限的 shell 允許清單、關掉的審批、每次啟動都重新下載的未釘版套件、直接寫進檔案的憑證、對整個檔案系統的信任。它有 21 條規則，每條都寫明理由，也寫明自己看不到什麼。每個發現都指出確切的 key、附上遮蔽過的片段；報告帶一個 SHA-256，verify 指令可以重算。72 個測試、10 組合成 fixture 與凍結的預期報告、零執行期依賴。它不讀 hook 腳本、不連 MCP server，目前也只有我自己審過。",
+      "descEn": "agentconf-audit reads the configuration files of AI coding agents (Claude Code, Claude Desktop, MCP servers, Codex) and reports the settings that hand an agent more power than intended: unrestricted shell allow-lists, approval switched off, unpinned packages fetched on every start, credentials written into the file, trust granted to the whole filesystem. There are 21 rules, each with a reason and a statement of what it cannot see. Every finding names the exact key and shows a redacted excerpt, and the report carries a SHA-256 that the verify command recomputes. It has 72 tests, 10 synthetic fixtures with frozen expected reports and no runtime dependencies. It does not read hook scripts or connect to MCP servers, and nobody but me has reviewed it yet.",
       "repo": "https://github.com/f0909172434/agentconf-audit",
       "links": []
     },
     {
       "name": "Finite Witness",
       "kind": "research",
-      "status": "educational tool · 8 WebMCP tools",
-      "descZh": "在瀏覽器裡窮舉 6 個頂點以內的小圖找反例，輸出可由獨立 Python 腳本重播的憑證。通過有限搜尋是證據，不是證明。",
-      "descEn": "Browser tool that exhaustively searches small graphs (up to 6 vertices) for counterexamples and writes certificates an independent Python script replays. Surviving a bounded search is evidence, not proof.",
+      "status": "educational tool, 8 WebMCP tools",
+      "descZh": "Finite Witness 在瀏覽器裡窮舉 6 個頂點以內的所有圖，替你輸入的敘述找反例，並輸出一份可以用獨立 Python 腳本重播的憑證。人透過網頁用它，agent 透過八個 WebMCP 工具用同一個引擎。撐過搜尋的敘述只是在小圖上沒被推翻，這是證據，不是證明。",
+      "descEn": "Finite Witness searches every graph on up to 6 vertices for a counterexample to a statement you type into the browser, and writes a certificate that an independent Python script can replay. People use it through the page; agents use the same engine through eight WebMCP tools. A statement that survives the search has only been checked on small graphs, which is evidence and not a proof.",
       "repo": "https://github.com/f0909172434/finite-witness-webmcp",
       "live": "https://f0909172434.github.io/finite-witness-webmcp/",
       "links": []
@@ -204,9 +208,9 @@
     {
       "name": "SAIR Proof Press",
       "kind": "research",
-      "status": "released-input evaluation · frozen artifacts",
-      "descZh": "等式蘊涵求解器的公開伴隨站：輸出 Lean 檢查的證明或有限反模型。凍結產物在 1,669 / 1,669 個公開輸入上通過，最終執行沒有呼叫模型。",
-      "descEn": "Public companion to an equational-implication solver that outputs Lean-checked proofs or finite countermodels. Frozen artifacts accepted 1,669 / 1,669 released inputs with zero model calls.",
+      "status": "evaluated on the released inputs",
+      "descZh": "SAIR Proof Press 是一個等式蘊涵求解器的公開伴隨站。每個輸入它都回傳兩種結果之一：Lean 檢查過的證明，或一個有限反模型。凍結的版本在 1,669 個公開輸入中通過 1,669 個，最終執行沒有呼叫任何模型；評測綁定在一個評測器 commit 上。英文論文與主張邊界都在 repo 裡。",
+      "descEn": "SAIR Proof Press is the public companion to a solver for equational implications. For each input it returns one of two things: a proof that Lean has checked, or a finite countermodel. The frozen build accepted 1,669 of the 1,669 released inputs, and the final run made no model calls at all; the evaluation is pinned to one evaluator commit. An English paper and the claim boundaries are in the repository.",
       "repo": "https://github.com/f0909172434/sair-stage2-proof-press",
       "live": "https://f0909172434.github.io/sair-stage2-proof-press/",
       "links": []
@@ -214,18 +218,18 @@
     {
       "name": "ProofWeave Core",
       "kind": "research",
-      "status": "experimental · Core 2",
-      "descZh": "把作者手寫的結構化 Markdown 證明交給固定版本的 Lean 4 / Mathlib 檢查，並把「已認證」與「人工確認語意對齊」分開回報。不做自然語言翻譯。",
-      "descEn": "Checks author-written structured Markdown proofs against pinned Lean 4 / Mathlib, and reports certification separately from human-confirmed statement alignment. No natural-language translation.",
+      "status": "experimental, Core 2",
+      "descZh": "ProofWeave Core 接收作者用 Markdown 寫的結構化證明，交給固定版本的 Lean 4 與 Mathlib 檢查。它分開回報兩件事：Lean 是否認證了形式敘述，以及是否有人確認過形式敘述和原文說的是同一件事。它不會把自然語言翻成 Lean。",
+      "descEn": "ProofWeave Core takes a structured proof its author wrote in Markdown and checks it against a pinned version of Lean 4 and Mathlib. It reports two things separately: whether Lean certified the formal statement, and whether a human has confirmed that the formal statement means what the prose says. It does not translate natural language into Lean.",
       "repo": "https://github.com/f0909172434/proofweave-math-lab",
       "links": []
     },
     {
       "name": "Goedel-Prover-V2 audit",
       "kind": "research",
-      "status": "reproducibility audit · draft report",
-      "descZh": "用官方釋出的流程重跑 Goedel-Prover-V2-8B 的 miniF2F-test：pass@32 為 201/244（82.38%），論文為 84.6%。repo 資料檔與論文所用版本有 4 題陳述不同；改正後多解出 1 題（202/244）。未經同儕審查。",
-      "descEn": "Re-ran Goedel-Prover-V2-8B on miniF2F-test through its own released pipeline: pass@32 is 201/244 (82.38%), against the paper's 84.6%. The repository's dataset differs from the paper's in 4 statements; correcting them adds one problem (202/244). Not peer reviewed.",
+      "status": "reproducibility audit, draft report",
+      "descZh": "我用作者釋出的流程重跑了 Goedel-Prover-V2-8B 在 miniF2F-test 上的結果。pass@32 是 201/244（82.38%），論文寫的是 84.6%。過程中發現 repo 附的資料集和論文用的版本有 4 題陳述不同；修正後模型多解一題，202/244，這個不一致已回報給上游。報告是草稿，未經同儕審查。",
+      "descEn": "I re-ran Goedel-Prover-V2-8B on miniF2F-test through the pipeline its authors released. Pass@32 came out at 201/244 (82.38%), against the 84.6% reported in the paper. Along the way I found that the repository's copy of the dataset differs from the paper's in 4 statements; with those corrected the model solves one more problem, 202/244, and the mismatch was reported upstream. The report is a draft and has not been peer reviewed.",
       "repo": "https://github.com/f0909172434/goedel-prover-v2-audit",
       "links": [
         {
@@ -241,61 +245,61 @@
     {
       "name": "RuleShift",
       "kind": "research",
-      "status": "research pilot · 800 paired tasks",
-      "descZh": "確定性的本機測試床，看 agent 記憶策略如何面對規則改變。這次先導實驗裡，簡單檢索與較複雜的策略表現相當（153 / 160），成本更低。",
-      "descEn": "Deterministic local testbed for how agent memory strategies cope with changing rules. In this pilot, simple retrieval matched more complex strategies (153 / 160) at lower cost.",
+      "status": "research pilot, 800 paired tasks",
+      "descZh": "RuleShift 是一個小而完全確定性的零售世界：agent 處理退貨、出貨與地址變更，腳下的規則卻不斷在改。我用它比較五種記憶策略，共 800 組配對任務。這次先導實驗裡，最簡單的純檢索和複雜策略表現一樣好（160 題中 153 題），成本更低。全部在本機用固定的 4-bit 模型執行，可以精確重播。",
+      "descEn": "RuleShift is a small, fully deterministic retail world in which an agent handles returns, shipments and address changes while the rules keep changing underneath it. I used it to compare five memory strategies over 800 paired tasks. In this pilot the simplest strategy, plain retrieval, did as well as the elaborate ones (153 of 160) and cost less. Everything runs locally with a pinned 4-bit model and can be replayed exactly.",
       "repo": "https://github.com/f0909172434/ruleshift",
       "negative": {
-        "en": "Simple retrieval matched the more complex memory strategies; the complexity did not pay for itself.",
-        "zh": "簡單檢索與較複雜的記憶策略表現相當；複雜度沒有換到成效。"
+        "en": "Plain retrieval did as well as the elaborate memory strategies; the extra complexity bought nothing.",
+        "zh": "純檢索和複雜的記憶策略表現一樣好；多出來的複雜度沒有換到任何東西。"
       },
       "links": []
     },
     {
       "name": "RuleShift-Web",
       "kind": "research",
-      "status": "pre-submission research snapshot",
-      "descZh": "Web 政策記憶稽核工作台：3,200 次模型執行與 1,600 次對照。不用 LLM 的控制器比兩個模型都強。草稿論文，未經審查。",
-      "descEn": "Web-policy memory audit workbench: 3,200 model runs and 1,600 controls. The no-LLM controller was stronger than either model. Draft manuscript, not reviewed.",
+      "status": "research snapshot, not yet submitted",
+      "descZh": "RuleShift-Web 把同一個問題搬到網站政策上：agent 被告知的政策改了，它的記憶跟得上嗎？工作台裡有 3,200 次模型執行與 1,600 次對照執行，全部可以從保存的證據重播。完全不用語言模型的控制器，在保留矩陣上贏過兩個模型。論文是草稿，尚未投稿也未經審查。",
+      "descEn": "RuleShift-Web moves the same question to web policies: when the policy an agent was told changes, does its memory keep up? The workbench holds 3,200 model runs and 1,600 control runs, and every one of them can be replayed from the saved evidence. The controller that uses no language model at all beat both models on the held-out matrix. The manuscript is a draft that has not been submitted or reviewed.",
       "repo": "https://github.com/f0909172434/ruleshift-web",
       "negative": {
-        "en": "The no-LLM controller beat both models on the frozen held-out matrix.",
-        "zh": "在凍結的保留矩陣上，不用 LLM 的控制器勝過兩個模型。"
+        "en": "The controller with no language model beat both models on the held-out matrix.",
+        "zh": "不用語言模型的控制器在保留矩陣上贏過兩個模型。"
       },
       "links": []
     },
     {
       "name": "RuleDiff negative result",
       "kind": "research",
-      "status": "negative result · technical report",
-      "descZh": "四頁技術報告：詞彙式政策影響預測器在開發集的 macro-F1 是 0.99，在一組保留資料上掉到 0.67。未經同儕審查。",
-      "descEn": "Four-page technical report: a lexical policy-impact predictor scored 0.99 macro-F1 on development data and 0.67 on one held-out packet. Not peer reviewed.",
+      "status": "negative result, technical report",
+      "descZh": "一份四頁的技術報告，記錄一個沒撐住的預測器。用詞彙特徵預測哪些政策變動會造成影響，開發集的 macro-F1 是 0.99，到唯一一組保留資料掉到 0.67。預先登錄的規則說到這裡就該停，所以完整論文沒有寫，結果凍結成這份報告。未經同儕審查。",
+      "descEn": "A four-page technical report on a predictor that did not hold up. A lexical model for predicting which policy changes matter scored 0.99 macro-F1 on the development data and 0.67 on the one held-out packet. The preregistered rule said to stop there, so the full paper was not written and the result was frozen as this report instead. It has not been peer reviewed.",
       "repo": "https://github.com/f0909172434/rulediff-negative-result",
       "negative": {
-        "en": "0.99 on development, 0.67 held out; the full-paper follow-up was stopped under its preregistered rule and frozen as this report.",
-        "zh": "開發集 0.99、保留集 0.67；完整論文的後續依預先登錄的規則停止，凍結成這份報告。"
+        "en": "0.99 on development data, 0.67 held out. The follow-up was stopped under its preregistered rule and frozen as this report.",
+        "zh": "開發集 0.99，保留集 0.67。後續依預先登錄的規則停止，凍結成這份報告。"
       },
       "links": []
     },
     {
       "name": "Charlie Alpha 4B",
       "kind": "research",
-      "status": "experimental v0.3.0 · mixed results",
-      "descZh": "實驗性的 Qwen3.5-4B MLX 微調，在本機挑選統計程序。在模擬基準有改善（DGP-Regret −34%），在 P-Bench 與 StatQA 沒有。",
-      "descEn": "Experimental Qwen3.5-4B MLX fine-tune that picks statistical procedures locally. Improves on a simulator benchmark (DGP-Regret −34%) but not on P-Bench or StatQA.",
+      "status": "v0.3.0, experimental, mixed results",
+      "descZh": "Charlie Alpha 4B 是 Qwen3.5-4B 的微調版，用 MLX 在本機執行，用途是替問題挑合適的統計程序。它在我自己的模擬基準上有進步（DGP-Regret −34%），在兩個公開基準 P-Bench 與 StatQA 上沒有。兩種結果一起公開。",
+      "descEn": "Charlie Alpha 4B is a fine-tune of Qwen3.5-4B, run locally with MLX, that picks which statistical procedure fits a problem. It improved on my own simulator benchmark (DGP-Regret −34%) but not on the two public benchmarks, P-Bench and StatQA. Both results are published together.",
       "repo": "https://github.com/f0909172434/Charlie-Alpha-4B",
       "negative": {
-        "en": "No improvement on P-Bench or StatQA; only the simulator benchmark moved.",
-        "zh": "P-Bench 與 StatQA 沒有改善；只有模擬基準有變化。"
+        "en": "P-Bench and StatQA did not improve; only my own simulator benchmark moved.",
+        "zh": "P-Bench 與 StatQA 沒有改善；只有我自己的模擬基準有變化。"
       },
       "links": []
     },
     {
       "name": "TokenScope",
       "kind": "learning",
-      "status": "educational browser lab",
-      "descZh": "雙語瀏覽器實驗室：手動設定的單頭 5×5 注意力玩具、取樣控制（temperature、top-k、top-p）、逐步 BPE 合併示範，數值可匯出。",
-      "descEn": "Bilingual in-browser lab: a hand-set one-head 5×5 attention toy, sampling controls (temperature, top-k, top-p), a step-by-step BPE merge demo, and exportable numbers.",
+      "status": "browser lab for learning",
+      "descZh": "TokenScope 是一個雙語網頁，用來學語言模型怎麼讀和寫文字。裡面有一個權重自己設的單頭 5×5 注意力玩具、temperature、top-k 與 top-p 取樣的滑桿，以及一步一步跑的 BPE 合併示範。畫面上每個數字都能匯出，方便拿到別處驗算。",
+      "descEn": "TokenScope is a bilingual page for learning how a language model reads and writes text. It has a one-head 5×5 attention toy whose weights you set by hand, sliders for temperature, top-k and top-p sampling, and a step-by-step BPE merge demo. Every number on screen can be exported so you can check it elsewhere.",
       "repo": "https://github.com/f0909172434/tokenscope",
       "live": "https://f0909172434.github.io/tokenscope/?lang=zh-Hant",
       "links": []
@@ -303,9 +307,9 @@
     {
       "name": "MiniHarness",
       "kind": "learning",
-      "status": "8-step workshop · zh-TW curriculum",
-      "descZh": "Python 工作坊：八步做出一個小型 agent harness，離線使用腳本化的模擬模型，附 38 個模組的繁體中文課程。不是生產環境用的。",
-      "descEn": "Python workshop where learners build a small agent harness in eight steps, offline with a scripted mock model, backed by a 38-module Traditional Chinese curriculum. Not production.",
+      "status": "8-step workshop, zh-TW curriculum",
+      "descZh": "MiniHarness 是一個 Python 工作坊，八個步驟做出一個小型的 agent harness。它用腳本化的模擬模型離線執行，不需要 API key，並附一套 38 個模組的繁體中文課程。這是教學用的程式碼，不是拿來部署的。",
+      "descEn": "MiniHarness is a Python workshop in which you build a small agent harness in eight steps. It runs offline against a scripted mock model, so no API key is needed, and it comes with a 38-module curriculum in Traditional Chinese. It is teaching code, not something to deploy.",
       "repo": "https://github.com/f0909172434/miniharness",
       "live": "https://f0909172434.github.io/miniharness/",
       "links": []
@@ -313,9 +317,9 @@
     {
       "name": "卜 ORACLE",
       "kind": "creative",
-      "status": "v3.0 release · Oct 2026",
-      "descZh": "4 分 30 秒短片：凌晨三點，有人問 AI「她會好起來嗎？」Three.js 在無頭 Chromium 裡只用 CPU 渲染，配樂與音效用 Python 合成。README 為片中的史料註明出處，並標示哪些是重建。",
-      "descEn": "A 4:30 short film: at 3 a.m. someone asks an AI \"Will she get better?\" Three.js rendered CPU-only in headless Chromium; score and sound design synthesised in Python. The README cites sources for the film's historical details and marks what was reconstructed.",
+      "status": "v3.0, released October 2026",
+      "descZh": "一部 4 分 30 秒的短片。凌晨三點，有人問 AI：「她會好起來嗎？」每一格畫面都由 Three.js 在無頭 Chromium 裡只用 CPU 渲染，配樂與音效用 Python 合成。README 替片中每個史料細節註明出處，並標出哪些部分是重建的。",
+      "descEn": "A 4:30 short film. At 3 a.m. someone asks an AI, \"Will she get better?\" Every frame is rendered by Three.js in headless Chromium on the CPU alone, and the score and sound design are synthesised in Python. The README cites a source for each historical detail in the film and marks which parts were reconstructed.",
       "repo": "https://github.com/f0909172434/ORACLE",
       "watch": "https://youtu.be/kQH1PZRkn00",
       "made": "Three.js r169 · SwiftShader (CPU) · numpy/scipy score",
@@ -324,9 +328,9 @@
     {
       "name": "病名為AI · The Disease Called AI",
       "kind": "creative",
-      "status": "released · Oct 2026",
-      "descZh": "原創歌曲與手繪水彩 MV，3 分 35 秒，67 個鏡頭。樂譜是一支 Python 程式；DiffSinger 歌聲用固定種子逐位元重現；用 Whisper 聽寫檢查咬字。",
-      "descEn": "An original song and hand-painted watercolour music video, 3:35, 67 shots. The score is a Python program; DiffSinger vocals render bit-exactly from fixed seeds; Whisper transcription is used as a diction check.",
+      "status": "released October 2026",
+      "descZh": "一首原創歌曲和一支手繪水彩 MV，長 3 分 35 秒，67 個鏡頭。樂譜是一支 Python 程式。歌聲由 DiffSinger 用固定種子渲染，每次輸出逐位元相同。最後用 Whisper 聽寫一遍，檢查咬字。",
+      "descEn": "An original song with a hand-painted watercolour music video, 3:35 long, 67 shots. The score is a Python program. The vocals are rendered by DiffSinger from fixed seeds and come out bit-for-bit identical every time. Whisper transcribes the result as a check on diction.",
       "repo": "https://github.com/f0909172434/The-Disease-Called-AI",
       "watch": "https://youtu.be/ha-ANfqri6g",
       "made": "p5.js + p5.brush · DiffSinger · Kokoro · Whisper QA",
@@ -335,9 +339,9 @@
     {
       "name": "world.execute(me); · Claude Code",
       "kind": "creative",
-      "status": "fan PV · Oct 2026",
-      "descZh": "把 Mili 的 world.execute(me); 演成一場 Claude Code 會話，直接在終端機裡即時播放。純 Node、零依賴；每一格畫面都是歌曲時間的函數。非官方同人作品，承接 MisakaZentai 的 DeepSeek Harness 版；不含歌曲音檔。",
-      "descEn": "Mili's world.execute(me); staged as a Claude Code session and played live in the terminal. Pure Node, no dependencies; every frame is a function of song time. Unofficial fan work after MisakaZentai's DeepSeek Harness version; the song is not included.",
+      "status": "fan PV, October 2026",
+      "descZh": "把 Mili 的 world.execute(me); 演成一場 Claude Code 會話，在你的終端機裡即時播放。純 Node、沒有任何依賴，每一格畫面都是歌曲進行時間的函數。這是非官方的同人作品，接續 MisakaZentai 的 DeepSeek Harness 版本。歌曲本身不包含在內。",
+      "descEn": "Mili's world.execute(me); staged as a Claude Code session and played live in your terminal. It is pure Node with no dependencies, and every frame is a function of the song's elapsed time. This is an unofficial fan work made after MisakaZentai's DeepSeek Harness version. The song itself is not included.",
       "repo": "https://github.com/f0909172434/world-execute-me-claude-code",
       "watch": "https://youtu.be/iEsGiRECytY",
       "made": "Node 20, zero dependencies · 24-bit ANSI · braille/sextant canvases",
@@ -346,9 +350,9 @@
     {
       "name": "DeepSeek Girl",
       "kind": "other",
-      "status": "Codex v0.1.0 · Harness v0.2.0 · unofficial",
-      "descZh": "同一份動畫圖集、兩個非官方宿主套件：Codex Desktop 的 16 方向動畫寵物，以及回應 Session 狀態的 DeepSeek Harness 外掛，離線運作。",
-      "descEn": "One animation atlas, two unofficial host packages: a 16-direction animated pet for Codex Desktop, and a DeepSeek Harness plugin that reacts to session state, offline.",
+      "status": "Codex v0.1.0, Harness v0.2.0, unofficial",
+      "descZh": "同一份動畫圖集，做成兩個套件：一個是 Codex Desktop 的桌面寵物，有 16 個朝向；另一個是 DeepSeek Harness 的外掛，會跟著 session 的狀態反應。兩個都離線運作，都不是官方的。",
+      "descEn": "One animation atlas, packaged twice: a desktop pet for Codex Desktop that faces 16 directions, and a DeepSeek Harness plugin that reacts to what the session is doing. Both run offline. Neither is official.",
       "repo": "https://github.com/f0909172434/deepseek-girl-codex-pet",
       "links": [
         {
