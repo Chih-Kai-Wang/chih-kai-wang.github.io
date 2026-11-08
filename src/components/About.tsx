@@ -16,7 +16,7 @@ export function About({ ui, locale, catalog }: { ui: UI; locale: Locale; catalog
           <p class="contact-head"><span class="pulse" aria-hidden="true" />{ui.about.contact}</p>
           <a href={EMAIL}><span class="dim">mail</span> f0909172434@gmail.com</a>
           <a href="/Chih-Kai-Wang-CV.pdf"><span class="dim">cv</span> Chih-Kai-Wang-CV.pdf</a>
-          <a href={GITHUB}><span class="dim">gh</span> github.com/f0909172434 ↗</a>
+          <a href={GITHUB}><span class="dim">gh</span> github.com/Chih-Kai-Wang ↗</a>
           <a href={GITHUB}><span class="dim">md</span> {ui.about.readme} ↗</a>
         </aside>
       </div>

@@ -40,10 +40,10 @@ export const counts = {
   merged: catalogHant.profile.contributions.length,
   films: catalogHant.projects.filter((p) => p.kind === "creative").length,
 };
-export const SOURCE_URL = "https://github.com/f0909172434/f0909172434.github.io/blob/main/src/data/projects.json";
-export const RAW_URL = "https://raw.githubusercontent.com/f0909172434/f0909172434.github.io/main/src/data/projects.json";
-export const SITE_REPO_URL = "https://github.com/f0909172434/f0909172434.github.io";
+export const SOURCE_URL = "https://github.com/Chih-Kai-Wang/chih-kai-wang.github.io/blob/main/src/data/projects.json";
+export const RAW_URL = "https://raw.githubusercontent.com/Chih-Kai-Wang/chih-kai-wang.github.io/main/src/data/projects.json";
+export const SITE_REPO_URL = "https://github.com/Chih-Kai-Wang/chih-kai-wang.github.io";
 export const lineUrl = (p: Project) => { const r = META.records[slug(p)]; return `${SOURCE_URL}#L${r.start}-L${r.end}`; };
-export const caseStudyUrl = (s: string) => `https://github.com/f0909172434/f0909172434/blob/main/case-studies/${s}.md`;
-export const GITHUB = "https://github.com/f0909172434";
+export const caseStudyUrl = (s: string) => `https://github.com/Chih-Kai-Wang/Chih-Kai-Wang/blob/main/case-studies/${s}.md`;
+export const GITHUB = "https://github.com/Chih-Kai-Wang";
 export const EMAIL = "mailto:f0909172434@gmail.com";

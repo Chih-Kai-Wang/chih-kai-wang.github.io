@@ -4,7 +4,7 @@ This is the source of my portfolio site and of my GitHub profile README. Both ar
 
 The page is presented as a single terminal session: each section is a command that types itself and prints its output. That is a visual choice. The content underneath is ordinary Markdown and JSON.
 
-[Live portfolio](https://f0909172434.github.io/) · [Profile](https://github.com/f0909172434) · [CV](https://f0909172434.github.io/Chih-Kai-Wang-CV.pdf)
+[Live portfolio](https://chih-kai-wang.github.io/) · [Profile](https://github.com/Chih-Kai-Wang) · [CV](https://chih-kai-wang.github.io/Chih-Kai-Wang-CV.pdf)
 
 ## Local development
 
@@ -35,7 +35,7 @@ The site ships in English, Traditional Chinese and Simplified Chinese. Tradition
 The hero and the status line print the SHA-256 of `src/data/projects.json`, computed over the file's bytes at build time. Each record shows its raw entry, sliced verbatim from the same file, with a link to the exact lines on GitHub. To check it yourself:
 
 ```sh
-git clone https://github.com/f0909172434/f0909172434.github.io && cd f0909172434.github.io
+git clone https://github.com/Chih-Kai-Wang/chih-kai-wang.github.io && cd chih-kai-wang.github.io
 shasum -a 256 src/data/projects.json
 ```
 

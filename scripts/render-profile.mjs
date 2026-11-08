@@ -69,8 +69,8 @@ const films = projects.filter((p) => p.kind === 'creative');
 const negatives = projects.filter((p) => p.negative);
 const counts = { projects: projects.length, negatives: negatives.length, merged: profile.contributions.length };
 const sha = createHash('sha256').update(readFileSync(new URL('src/data/projects.json', root))).digest('hex');
-const SITE = 'https://f0909172434.github.io/';
-const SOURCE = 'https://github.com/f0909172434/f0909172434.github.io/blob/main/src/data/projects.json';
+const SITE = 'https://chih-kai-wang.github.io/';
+const SOURCE = 'https://github.com/Chih-Kai-Wang/chih-kai-wang.github.io/blob/main/src/data/projects.json';
 const FILM_SCREEN = {
   ORACLE: { id: 'oracle', file: 'oracle.mp4', length: '4:30' },
   'The-Disease-Called-AI': { id: 'disease', file: 'the-disease-called-ai.mp4', length: '3:35' },
